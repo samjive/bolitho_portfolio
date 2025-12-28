@@ -4,20 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
     <title>About Me</title>
 </head>
 <body>
-    <h1>About Me</h1>
-<hr>
-    <button onclick="document.location='../index.html'">Home</button>
-    <button onclick="document.location='about.html'">About Me</button>
-    <button onclick="document.location='resume.html'">Resume</button>
-    <button onclick="document.location='coverLetter.html'">Cover Letter</button>
-    <button onclick="document.location='careerGoals.html'">Career Goals</button>
-</hr>
-<img src="../images/IMG_1048.jpeg">
-<p>My name is Sam. This is my partner, Jace, and I. I'm on the right.</p>
-<p>I currently work at EverBank as a Deposit Operations Specialist. I hope to eventually work with technology within the bank.</p>
+    <main>
+        <div class="navigation">
+            <nav>
+                <button onclick="document.location='../index.html'">Home</button>
+                <button onclick="document.location='about.html'">About Me</button>
+                <button onclick="document.location='resume.html'">Resume</button>
+                <button onclick="document.location='coverLetter.html'">Cover Letter</button>
+                <button onclick="document.location='careerGoals.html'">Career Goals</button>
+            </nav>
+        </div>
+        <div class="title">
+            <header>
+                <h1>About Me</h1>
+            </header>
+        </div>
+        <div class="content">
+            <section>
+                <img src="../images/IMG_1048.jpeg" class="aboutMePic">
+                <article class="aboutMeContent">
+                    <p>My name is Sam. This is my partner, Jace, and I. I'm on the right.</p>
+                    <p>I currently work at EverBank as a Deposit Operations Specialist. I hope to eventually work with technology within the bank.</p>
+                </article>
+            </section>
+        </div>
+        <!-- <footer>
+            <div class="currBTT">
+                <script>
+                    const date = new Date();
+                    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                    const formattedDate = date.toLocaleDateString(undefined, options);
+                    document.write('<p class="currentDate">' + formattedDate + '</p>');
+                </script>
+                <button onclick="document.location='about.html'">Back to top</button>
+            </div>
+        </footer> -->
+    </main>
 </body>
 </html>

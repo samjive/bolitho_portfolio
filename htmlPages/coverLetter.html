@@ -4,17 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Cover Letter</title>
 </head>
 <body>
-    <h1>Cover Letter</h1>
-<hr>
-    <button onclick="document.location='../index.html'">Home</button>
-    <button onclick="document.location='about.html'">About Me</button>
-    <button onclick="document.location='resume.html'">Resume</button>
-    <button onclick="document.location='coverLetter.html'">Cover Letter</button>
-    <button onclick="document.location='careerGoals.html'">Career Goals</button>
-</hr>
+    <div class="navigation">
+        <nav>
+            <button onclick="document.location='../index.html'">Home</button>
+            <button onclick="document.location='about.html'">About Me</button>
+            <button onclick="document.location='resume.html'">Resume</button>
+            <button onclick="document.location='coverLetter.html'">Cover Letter</button>
+            <button onclick="document.location='careerGoals.html'">Career Goals</button>
+        </nav>
+    </div>
+    <div class="title">
+        <header>
+            <h1>Cover Letter</h1>
+        </header>
+    </div>
+    <hr>
+    <main>
+        <section>
+            <article>
+                <p>To Whom It May Concern,</p>
+                <p>I am writing to express my interest in the Web Developer position at ABC Inc. With a strong background in computer science and hands-on experience in <strong>web development</strong>, I am confident in my ability to contribute effectively to your team and help drive the company's mission forward.</p>
+                <p>During my time at Western Governors University, where I am pursuing a <mark><em>Bachelor of Science in Computer Science</em></mark>, I have developed a solid foundation in programming languages, software development methodologies, and problem-solving skills. My education has equipped me with the technical expertise necessary to excel in a dynamic and fast-paced work environment.</p>
+                <p>In addition to my academic background, I have completed a web development program at DevMountain, where I gained practical experience in building responsive and user-friendly web applications. This hands-on experience has honed my skills in HTML, CSS, JavaScript, and various frameworks, allowing me to create efficient and visually appealing digital solutions.</p>
+                <p>I am particularly drawn to ABC Inc. because of its commitment to innovation and excellence in the tech industry. I am excited about the opportunity to contribute to your team by leveraging my skills and passion for technology to help achieve your company's goals.</p>
+                <p>Thank you for considering my application. I look forward to the opportunity to discuss how my background, skills, and enthusiasm can be an asset to ABC Inc. Please feel free to contact me at your earliest convenience to schedule an interview.</p>
+                <p>Sincerely,</p>
+                <p>Samuel Bolitho</p>
+            </article>
+        </section>
+        <footer>
+            <div class="currentDate">
+                <script>
+                    const date = new Date();
+                    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                    const formattedDate = date.toLocaleDateString(undefined, options);
+                    document.write('<p class="currentDate">' + formattedDate + '</p>');
+                </script>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>

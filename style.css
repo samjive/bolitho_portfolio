@@ -1,0 +1,44 @@
+body {
+    background-color: #009999;
+}
+button {
+    background-color: #c0c0c0;
+    margin: 2px 2px 2px 0;
+    border-width: 1px;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+}
+p {
+    font-family: "Courier New", Courier, monospace;
+}
+div.title {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    height: 36px;
+    width: 100%;
+    padding: 30px;
+}
+p.currentDate {
+    text-align: right;
+    font-family: "Courier New", Courier, monospace;
+    height: 24px;
+    width: 100%;
+}
+img.aboutMePic {
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    height: 500px;
+    width: 375px;
+}
+article {
+    /*padding: 50px; */
+    width: 80%;
+}
+article.aboutMeContent {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+div.currBTT {
+    margin-top: 430px;
+}

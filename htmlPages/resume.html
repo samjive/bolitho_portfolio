@@ -4,33 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Resume</title>
 </head>
 <body>
-    <header>
-        <h1>Resume</h1>
-    </header>
-    <nav>
-        <button onclick="document.location='../index.html'">Home</button>
-        <button onclick="document.location='about.html'">About Me</button>
-        <button onclick="document.location='resume.html'">Resume</button>
-        <button onclick="document.location='coverLetter.html'">Cover Letter</button>
-        <button onclick="document.location='careerGoals.html'">Career Goals</button>
-    </nav>
+    <div class="navigation">
+        <nav>
+            <button onclick="document.location='../index.html'">Home</button>
+            <button onclick="document.location='about.html'">About Me</button>
+            <button onclick="document.location='resume.html'">Resume</button>
+            <button onclick="document.location='coverLetter.html'">Cover Letter</button>
+            <button onclick="document.location='careerGoals.html'">Career Goals</button>
+        </nav>
+    </div>
+    <div class="title">
+        <header>
+            <h1>Resume</h1>
+        </header>
+    </div>
     <main>
-        <section>
-            <!-- Name and contact info goes here -->
-        </section>
-        <section>
-            <!-- Work experience goes here -->
-        </section>
-        <section>
-            <!-- Education goes here -->
-        </section>
-        <section>
-            <!-- Skills go here -->
-        </section>
+        <div class="content">
+            <section>
+                <h2>Samuel Bolitho</h2>
+                <p>Email: sbolit1@wgu.edu</p>
+                <p>Phone: (580) 320-5585</p>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section>
+                <article>
+                    <h3>Professional Experience</h3>
+                        <h4><em>EverBank - Deposit Operations Specialist</em></h4>
+                        <span><i>July 2023 - Present</i></span>
+                        <ul>
+                            <li>Process and verify various types of deposits to ensure accuracy and compliance with banking regulations.</li>
+                            <li>Collaborate with team members to resolve discrepancies and improve deposit processing efficiency.</li>
+                            <li>Utilize banking software to manage and track deposit transactions.</li>
+                        </ul>
+                        <h4><em>Starbuck's - Barista</em></h4>
+                        <span><i>September 2022 - July 2023</i></span>
+                        <ul>
+                            <li>Provided excellent customer service by taking orders, preparing beverages, and ensuring customer satisfaction.</li>
+                            <li>Maintained a clean and organized work environment to comply with health and safety standards.</li>
+                            <li>Worked collaboratively with team members to meet high-volume demands during peak hours.</li>
+                        </ul>
+                        <h4><em>Hot Shots Coffee House - Barista</em></h4>
+                        <span><i>June 2022 - August 2022</i></span>
+                        <ul>
+                            <li>Delivered high-quality customer service by preparing and serving coffee and other beverages.</li>
+                            <li>Managed inventory and restocked supplies to ensure smooth daily operations.</li>
+                            <li>Handled cash register transactions accurately and efficiently.</li>
+                        </ul>
+                </article>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section>
+                <article>
+                    <h3>Education</h3>
+                        <h4><em>Western Governors University</em></h4>
+                            <p>Bachelor of Science in Computer Science</p>
+                            <p>Expected Graduation: March 2028</p>
+                        <h4><em>DevMountain</em></h4>
+                            <p>Web Development Student</p>
+                            <p>Completed: November 2022</p>
+                        <h4><em>Oklahoma State University</em></h4>
+                            <p>Bachelor of Science in Mechanical Engineering</p>
+                            <p><i>Ongoing</i></p>
+                        <h4><em>East Central University</em></h4>
+                            <p>Bachelor of Science in Computer Science</p>
+                            <p><i>Ongoing</i></p>
+                </article>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section>
+                <article>
+                    <h3>Skills</h3>
+                        <ul>
+                            <li>Proficient in HTML, CSS, and JavaScript</li>
+                            <li>Experience with version control systems such as Git.</li>
+                            <li>Strong problem-solving and analytical skills.</li>
+                            <li>Excellent communication and teamwork abilities.</li>
+                        </ul>
+                </article>
+            </section>
+        </div>
+        <footer>
+            <div class="currentDate">
+                <script>
+                    const date = new Date();
+                    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                    const formattedDate = date.toLocaleDateString(undefined, options);
+                    document.write('<p class="currentDate">' + formattedDate + '</p>');
+                </script>
+            </div>
+            <button onclick="document.location='resume.html'">Back to top</button>
+        </footer>
     </main>
 </body>
 </html>
