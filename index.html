@@ -30,5 +30,15 @@
         <p>and if you want to see how well I can make myself sound interested in a company's mission, click <a href="htmlPages/coverLetter.html">here</a>.</p>
         <p>Last item, I promise. Click <a href="htmlPages/careerGoals.html">here</a> if you care to see my career goals....or if you are grading my assignment.</p>
     </div>
+    <footer>
+        <div class="currentDate">
+            <script>
+                const date = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const formattedDate = date.toLocaleDateString(undefined, options);
+                document.write('<p class="currentDate">' + formattedDate + '</p>');
+            </script>
+        </div>
+    </footer>
 </body>
 </html>

@@ -7,6 +7,13 @@ button {
     border-width: 1px;
     border-color: #FFFFFF #808080 #808080 #FFFFFF;
 }
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: right;
+}
 p {
     font-family: "Courier New", Courier, monospace;
 }
@@ -32,13 +39,45 @@ img.aboutMePic {
     width: 375px;
 }
 article {
-    /*padding: 50px; */
     width: 80%;
 }
 article.aboutMeContent {
     margin-right: 50px;
     margin-left: 50px;
 }
-div.currBTT {
-    margin-top: 430px;
+img.careerGoalPic {
+    height: 300px;
+    width: 225px;
+    margin: 15px;
+}
+div.careerGoalGames {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    display: flex;
+}
+div.careerGoalGames:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+} 
+div.hollowKnight {
+    padding: 2px 16px;
+    text-align: center;
+    transition: 0.3s;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+div.stardewValley {
+    padding: 2px 16px;
+    text-align: center;
+    transition: 0.3s;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+div.icarus {
+    padding: 2px 16px;
+    text-align: center;
+    transition: 0.3s;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
