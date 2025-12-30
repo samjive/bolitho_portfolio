@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Career Goals</title>
+</head>
+<body>
+    <div class="navigation">
+        <nav>
+            <button onclick="document.location='../index.html'">Home</button>
+            <button onclick="document.location='about.html'">About Me</button>
+            <button onclick="document.location='resume.html'">Resume</button>
+            <button onclick="document.location='coverLetter.html'">Cover Letter</button>
+            <button onclick="document.location='careerGoals.html'">Career Goals</button>
+        </nav>
+    </div>
+    <div class="title">
+        <header>
+            <h1>Career Goals</h1>
+        </header>
+    </div>
+        <main>
+            <section>    
+                <article>
+                    <h2>My Career Goals</h2>
+                    <p>My career goals are to become a game developer, focusing mostly on PC games, and eventually lead a team of developers in creating fun and innovative games. I aim to continuously improve my skills and stay updated with the latest technologies in the field, but trying not to lose touch with the fundamentals.</p>
+                    <p>In the short term, I plan to complete my degree at WGU and build a strong portfolio of projects that showcase my abilities in game development and other areas of software development. I also intend to gain practical experience through internships or entry-level positions.</p>
+                    <p>Here are some of my favorite games that I pull inspiration from:</p>
+                    <div class="careerGoalGames">
+                        <div class="hollowKnight">
+                            <h3 class="hollowKnightName">Hollow Knight</h3>
+                            <p class="hollowKnightHP">Hours Played: 99.9</p>
+                            <img src="../images/hollowKnightimg.png" class="careerGoalPic" alt="Hollow Knight game cover art">
+                        </div>
+                        <div class="stardewValley">
+                            <h3 class="stardewValleyName">Stardew Valley</h3>
+                            <p class="stardewValleyHP">Hours Played: 87.2</p>
+                            <img src="../images/stardewValleyimg.png" class="careerGoalPic" alt="Stardew Valley game cover art">
+                        </div>
+                        <div class="icarus">
+                            <h3 class="icarusName">Icarus</h3>
+                            <p class="icarusHP">Hours Played: 221.1</p>
+                            <img src="../images/icarusimg.jpg" class="careerGoalPic" alt="Icarus game cover art">
+                        </div>
+                    </div>
+                </article>
+                <div class="contactForm">
+                    <form action="#" method="post">
+                        <h2>Contact Me</h2>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <div class="currentDate">
+                    <script>
+                        const date = new Date();
+                        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                        const formattedDate = date.toLocaleDateString(undefined, options);
+                        document.write('<p class="currentDate">' + formattedDate + '</p>');
+                    </script>
+                </div>
+            </footer>
+        </main>
+</body>
+</html>

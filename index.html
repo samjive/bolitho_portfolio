@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="navigation">
+    <nav>
+        <button onclick="document.location='index.html'">Home</button>
+        <button onclick="document.location='htmlPages/about.html'">About Me</button>
+        <button onclick="document.location='htmlPages/resume.html'">Resume</button>
+        <button onclick="document.location='htmlPages/coverLetter.html'">Cover Letter</button>
+        <button onclick="document.location='htmlPages/careerGoals.html'">Career Goals</button>
+    </nav>
+</div>    
+<div class="title">
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+</div>
+    <div class="content">
+        <h3>Hello! Welcome to my portfolio website project for WGU!</h3>
+        <p>This will currently be a simple portfolio website, but I hope to build it into a retro-ish Windows portfolio site for all of my future projects.</p>
+        <p>If you would like to know a little bit more about me, feel free to click <a href="htmlPages/about.html">here</a>.</p>
+        <p>If you don't care to know about me at all, feel free to click <a href="htmlPages/resume.html">here</a> for my resume,</p>
+        <p>and if you want to see how well I can make myself sound interested in a company's mission, click <a href="htmlPages/coverLetter.html">here</a>.</p>
+        <p>Last item, I promise. Click <a href="htmlPages/careerGoals.html">here</a> if you care to see my career goals....or if you are grading my assignment.</p>
+    </div>
+    <footer>
+        <div class="currentDate">
+            <script>
+                const date = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const formattedDate = date.toLocaleDateString(undefined, options);
+                document.write('<p class="currentDate">' + formattedDate + '</p>');
+            </script>
+        </div>
+    </footer>
+</body>
+</html>
